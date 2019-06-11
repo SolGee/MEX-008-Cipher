@@ -4,11 +4,78 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+      <header>
+          <nav>
+            <a href=""><img src="logo.svg" alt=""></a>
+          </nav>
+      </header>
+      <main>  
+        <!-- BIENVENIDA -->
+        <section id="bienvenida">
+          <h1>Bienvenido al Rally</h1>
+          <h2>¿Quieres ganar una noche extra todo pagado en nuestro hotel?</h2>
+          <a id="how-to-play" href="#instrucciones">¿Cómo jugar?</a>
+        </section>
+        <!-- INSTRUCCIONES -->
+        <section id="instrucciones" class="oculto">
+          <h2>Instrucciones</h2>
+          <ol>
+            <li>Al rededor del hotel hay 5 palabras cifradas.</li>
+            <li>Las 5 palabras conforman una frase secreta.</li>
+            <li>Cada mensaje se compone de lo siguiente:</li>
+            <img src="how-to.png" alt="">
+            <li>Tu misión es recorrer el hotel, encontrar los mensajes y ser el primero en descifrar cada una de las palabras para armar la frase secreta.</li>
+            <li>Una vez descifrado el mensaje deberás llamar a recepción para verificar si fuiste el primero en lograrlo.</li>
+          </ol>
+          <p><strong>¿Fuiste el ganador? ¡Felicidades!</strong> Pero aún queda un paso más.</p>
+          <ul>
+            <li>Para que otros huéspedes tengan la misma oportunidad que tú, serás el encargado de armar la nueva frase secreta y cifrarla.</li>
+            <li>No te preocupes, en esta misma app podrás cifrar tu frase.</li>
+            <li>Te recomendamos que uses un número diferente de cifrado por cada palabra que tenga tu frase para que sea un mayor reto para los futuros participantes.</li>
+            <li>NO OLVIDES DEJAR EN RECEPCIÓN:</li>
+              <ol>
+                <li>TU NUEVA FRASE (SIN CIFRAR)</li>
+                <li>EL O LOS NÚMEROS PARA CIFRAR TU FRASE.</li>
+                <li>TU NUEVA FRASE CIFRADA.</li>
+              </ol>
+          </ul>
+          <p>¿Listo?</p>
+          <a id="inicio" href="#comenzar">Comenzar</a>
+        </section>
+        <!-- COMENZAR - CIFRADO/ DESCIFRADO -->
+        <section id="comenzar" class="oculto">
+          <div id=cipher>
+            <label for="">Ingresa tu número clave:</label>
+            <input type="text" placeholder="Número para cifrar o descifrar">
+            <label for="">Ingresa tu palabra (cifrada o no):</label>
+            <input type="text" placeholder="Palabra para cifrar o descifrar">
+
+            <a href="" id="Descifrar">Descifrar</a>
+            <a href="" id="Cifrar">Cifrar</a>
+          </div>
+          <div>
+            <p>¿Tienes dudas?</p>
+            <a id="preguntas" href="#dudas">?</a>
+          </div>    
+        </section>
+        
+        <!-- ? -->
+        <section id="dudas" class="oculto">
+          <h3>¿Cómo funciona?</h3>
+          <a id="cerrar" href="#comenzar">X</a>
+          <ul>
+            <li> Para descifrar, lo único que debes hacer es llenar los campos en nuestra app (como se muestra a continuación) y dar clic en el botón descifrar.</li>
+            <img src="descifrar.png" alt="">
+            <li> Para cifrar, lo único que debes hacer es llenar los campos en nuestra app (como se muestra a continuación) y dar clic en el botón cifrar.</li>
+            <img src="cifrar.png" alt="">
+          </ul>
+        </section>
+      </main>
+      
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
