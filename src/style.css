@@ -1,38 +1,172 @@
-.oculto {
-    display: none;
-}
+
+
+
+/* BOX SIZING */
+
+html {
+    box-sizing: border-box;
+    
+   }
+   *,* :before, *:after {
+    box-sizing: inherit;
+   }
+
+   /* FIN DEL BOX SIZING */
 
 
 body {
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#35ccc9+1,a1c133+32,a1c133+68,ff5cda+100 */
+    height: 100%;
+    background: #35ccc9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #35ccc9 1%, #a1c133 32%, #a1c133 68%, #ff5cda 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #35ccc9 1%,#a1c133 32%,#a1c133 68%,#ff5cda 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #35ccc9 1%,#a1c133 32%,#a1c133 68%,#ff5cda 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35ccc9', endColorstr='#ff5cda',GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+
 }
 
 header {
-    width: 100%;
-    height: 150px;
+    height: 100px;
 }
 
-nav {
+header, main {
     width: 1200px;
     margin: 0 auto;
+
 }
 
 nav img {
-    width: 150px;
+    margin: 20px;
+    width: 75px;
     float: right;
 }
 
-a {
-    text-decoration: none;
+.fondo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9)
 }
 
-#bienvenida {
+.botones {
+    text-decoration: none;
+    text-align: center;
+    max-width: 250px;
+    max-height: 80px;
+    padding: 15px;
+    border: #A1C133 solid 3px;
+    border-radius: 15px;
+    color: gray;
+
+}
+
+.botones:hover {
+    background-color: #A1C133;
+    color: white;
+}
+
+#inicio {
+    display: block;
+    margin:0px auto;
+}
+
+#bienvenida{
     text-align: center;
 }
 
-#bienvenida h2 {
-    font-weight: 200;
+#bienvenida {
+    padding-top: 150px;
 }
+
+#bienvenida h2 {
+    font-size: 15px;
+}
+h1 {
+    font-size: 10px;
+}
+
+h2 {
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+#ganador {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+strong {
+    display: block;
+    margin: auto;
+    padding-bottom: 10px
+}
+
+#instrucciones {
+    width: 600px;
+    /* max-width: 600px; */
+    margin: 0 auto;
+    padding: 20px;
+    height: 1200px;
+
+}
+
+#instrucciones ol, #instrucciones ul {
+    /* padding: none; */
+    text-align: left;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+#sugerencia {
+    padding-top: 20px;
+}
+
+#instrucciones li {
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+#instrucciones p {
+    text-align: center;
+}
+
+#instrucciones img {
+    width: 75%;
+    padding: 30px 0;
+    display: block;
+    margin: auto;
+
+}
+
+#comenzar {
+    padding:200px 50px 0;
+
+}
+
+#comenzar label {
+    display: block;
+    margin:15px 0;
+}
+
+#comenzar input {
+    width: 300px;
+}
+
+/* 
+#palabra {
+    display: inline-block;
+    height: 300px;
+} */
 
 #dudas {
     text-align: left;
@@ -79,4 +213,9 @@ a {
 #dudas img {
     width: 300px;
     margin-bottom: 20px;
+}
+
+
+.oculto {
+    display: none;
 }
