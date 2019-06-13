@@ -53,19 +53,18 @@
             <label for="">Ingresa tu número clave:</label>
             <input type="text" placeholder="Número para cifrar o descifrar">
             <label for="">Ingresa tu palabra (cifrada o no):</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Palabra para cifrar o descifrar"></textarea>
-            <!-- <input type="text" id="palabra" > -->
-
+            <textarea name="" id="" cols="30" rows="7" placeholder="Palabra para cifrar o descifrar"></textarea>
+          </div>
+          <div id="dud">
             <a href="" id="descifrar" class="botones">Descifrar</a>
             <a href="" id="cifrar" class="botones">Cifrar</a>
-
-            <p>Tu mensaje es:</p>
-            <p id="mensaje-secreto"></p>
+            <a href="" id="limpiar" class="botones">Borrar</a>
           </div>
-          <div>
-            <p>¿Tienes dudas?</p>
-            <a id="preguntas" href="#dudas">?</a>
-          </div>    
+          <div id="frase">
+            <p>Tu mensaje es:</p>
+            <textarea name="" id="frase-secreta" cols="30" rows="7" placeholder=""></textarea>
+            <a id="preguntas" href="#dudas">?</a> 
+          </div>
         </section>
         
         <!-- ? -->
@@ -78,9 +77,7 @@
             <li> Para cifrar, lo único que debes hacer es llenar los campos en nuestra app (como se muestra a continuación) y dar clic en el botón cifrar.</li>
             <img src="cifrar.png" alt="">
           </ul>
-          
         </section>
-
       </main>
       
     <script src="cipher.js"></script>
