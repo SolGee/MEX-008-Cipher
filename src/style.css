@@ -54,7 +54,7 @@ nav img {
     margin: 0 auto;
     width: 600px;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9)
+    background-color: rgb(238, 207, 255)
 }
 
 .botones {
@@ -66,10 +66,17 @@ nav img {
     border: #4518a0 solid 3px;
     border-radius: 15px;
     color: rgb(42, 42, 42);
+    cursor: pointer;
 
 }
+ #limpiar {
+     max-width: 100px;
+     background-color: rgba(255, 255, 255, 0);
+ }
 
-.botones:hover, #preguntas:hover {
+
+
+.botones:hover, #preguntas:hover, #limpiar:hover, #inicio:hover {
     background-color: #4518a0;
     color: white;
 }
@@ -77,6 +84,7 @@ nav img {
 #inicio {
     display: block;
     margin:0px auto;
+    max-width: 150px;
 }
 
 #bienvenida{

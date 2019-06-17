@@ -49,22 +49,24 @@
         </section>
         <!-- COMENZAR - CIFRADO/ DESCIFRADO -->
         <section id="comenzar" class="oculto fondo">
-          <div id=cipher>
-            <label for="">Ingresa tu número clave:</label>
-            <input type="text" placeholder="Número para cifrar o descifrar">
-            <label for="">Ingresa tu palabra (cifrada o no):</label>
-            <textarea name="" id="" cols="30" rows="7" placeholder="Palabra para cifrar o descifrar"></textarea>
-          </div>
-          <div id="dud">
-            <a href="" id="descifrar" class="botones">Descifrar</a>
-            <a href="" id="cifrar" class="botones">Cifrar</a>
-            <a href="" id="limpiar" class="botones">Borrar</a>
-          </div>
-          <div id="frase">
-            <p>Tu mensaje es:</p>
-            <textarea name="" id="frase-secreta" cols="30" rows="7" placeholder=""></textarea>
-            <a id="preguntas" href="#dudas">?</a> 
-          </div>
+          <form id="formulario" action="">
+            <div id=cipher>
+              <label for="">Ingresa tu número clave:</label>
+              <input type="text" id="offset" placeholder="Número para cifrar o descifrar" >
+              <label for="">Ingresa tu palabra (cifrada o no):</label>
+              <textarea name="" id="code-decode" cols="30" rows="7" placeholder="Palabra para cifrar o descifrar" ></textarea>
+            </div>
+            <div id="dud">
+              <a  id="descifrar" class="botones">Descifrar</a>
+              <a  id="cifrar" class="botones">Cifrar</a>
+              <input type="button" value="Borrar" id="limpiar" class="botones">
+            </div>
+            <div id="frase">
+              <p>Tu mensaje es:</p>
+              <textarea name="" id="frase-secreta" cols="30" rows="7" placeholder="Mensaje"></textarea>
+              <a id="preguntas" href="#dudas">?</a> 
+            </div>
+          </form>
         </section>
         
         <!-- ? -->
