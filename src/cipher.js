@@ -1,12 +1,12 @@
 window.cipher = {
   encode: (offset, string) => {
-    let textCoded = '';
-    let stringMay = string.toUpperCase();
-    for(let i = 0; i < stringMay.length; i++){
-      let stringInAsccii = stringMay.charCodeAt(i);
-      let asciiWithOffset = (stringInAsccii - 65 + offset ) % 26 + 65;
-      let aOffsetToText = String.fromCharCode(asciiWithOffset);
-      textCoded += aOffsetToText;
+    let textCoded = ''; // Se declara una variable vacia para rellenar con el texto cifrado o descifrado
+    let stringMay = string.toUpperCase(); // Se declara una variable que pasa los valores del parametro string a MAYUSCULA
+    for(let i = 0; i < stringMay.length; i++){ // Declaras el index con un valor inicial de 0. Cuando i sea menor al largo de stringMay se le agregara 1 a i
+      let stringAsccii = stringMay.charCodeAt(i); // El metodo charCodeAt devuelve el valor Unicode de los caracteres. La i para A seria 65
+      let asciiWithOffset = (stringAsccii - 65 + offset ) % 26 + 65; //Se aplica la formula de cifrado del código César
+      let aOffsetToText = String.fromCharCode(asciiWithOffset); // Se determina el valor inicial de A en la función. fromCharCode regresa el string equivalente al valor unicode
+      textCoded += aOffsetToText; // se reasigna el valor de textCoded a textCoded + aOffsetToText
     }
     return textCoded;
   },
@@ -14,8 +14,8 @@ window.cipher = {
     let textDecoded = '';
     let stringMay = stringMay.toUpperCase();
     for(let i = 0; i < stringMay.length; i++){
-      let stringInAsccii = stringMay.charCodeAt(i);
-      let asciiWithoutOffset = (stringInAsccii - 65 - offset + 52) % 26 + 65;
+      let stringAsccii = stringMay.charCodeAt(i);
+      let asciiWithoutOffset = (stringAsccii - 65 - offset + 52) % 26 + 65; // Se le resta el offset para llegar al valor inicial, o sea, 0. Se suma 52 para que de 2 vueltas al alfabeto e inicie en la vuelta 3
       let fromAsciiToText = String.fromCharCode(asciiWithoutOffset);
       textDecoded += fromAsciiToText;
     }return textDecoded;

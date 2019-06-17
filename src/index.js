@@ -109,10 +109,10 @@ const cleanButton = document.getElementById('limpiar');
 
 const cleanTextarea = () => {
   document.getElementById('formulario').reset();
-
+  let blankSpace = document.getElementById('frase-secreta');
+  blankSpace.innerHTML = '';
 }
   
-
 
 cleanButton.addEventListener('click', cleanTextarea);
 
