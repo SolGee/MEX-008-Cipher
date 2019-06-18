@@ -15,7 +15,7 @@ window.cipher = {
     let stringMay = string.toUpperCase();
     for(let i = 0; i < stringMay.length; i++){
       let stringAsccii = stringMay.charCodeAt(i);
-      let asciiWithoutOffset = (stringAsccii - 65 - offset + 52) % 26 + 65; // Se le resta el offset para llegar al valor inicial, o sea, 0. Se suma 52 para que de 2 vueltas al alfabeto e inicie en la vuelta 3
+      let asciiWithoutOffset = (stringAsccii + 65 - offset) % 26 + 65; // Se invierten signos
       let fromAsciiToText = String.fromCharCode(asciiWithoutOffset);
       textDecoded += fromAsciiToText;
     }return textDecoded;
