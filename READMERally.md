@@ -6,11 +6,13 @@ La idea del proyecto busca aplicar el [cifrado Cesar](https://en.wikipedia.org/w
 1. Al rededor del hotel hay 5 palabras cifradas.
 2. Las 5 palabras conforman una frase secreta.
 3. Cada mensaje se compone de lo siguiente:
+
 ![Componentes-del-mensaje](https://github.com/SolGee/MEX-008-Cipher/blob/master/src/how-to.png)
+
 4. Tu misión es recorrer el hotel, encontrar los mensajes y ser el primero en descifrar cada una de las palabras para armar la frase secreta.
 5. Una vez descifrado el mensaje deberás llamar a recepción para verificar si fuiste el primero en lograrlo.
 
-### ¿¿Fuiste el ganador? ¡Felicidades!
+### ¿Fuiste el ganador? ¡Felicidades!
 #### Pero aún queda un paso más.
 
 Para que otros huéspedes tengan la misma oportunidad que tú, serás el encargado de armar la nueva frase secreta y cifrarla.
@@ -29,10 +31,12 @@ El cifrado y descifrado de mensajes se basa en el sistema de cifrado César. Uti
 
 ### Para descifrar:
 * Llena los campos como se muestra a continuación y da clic en el botón descifrar.
+
 ![Descifrar](https://github.com/SolGee/MEX-008-Cipher/blob/master/src/descifrar.png)
 
 ### Para cifrar:
 * Llena los campos como se muestra a continuación y da clic en el botón cifrar.
+
 ![Cifrar](https://github.com/SolGee/MEX-008-Cipher/blob/master/src/cifrar.png)
 
 
