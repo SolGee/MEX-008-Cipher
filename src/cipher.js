@@ -10,6 +10,7 @@ window.cipher = {
     }
     return textCoded;
   },
+  
   decode: (offset, string) => {
     let textDecoded = '';
     let stringMay = string.toUpperCase();
